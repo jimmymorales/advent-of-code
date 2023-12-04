@@ -11,10 +11,10 @@ fun main() {
     fun part2(input: List<String>): Int = part1(input, windowSize = 14)
 
     // test if implementation meets criteria from the description, like:
-    val testInput = utils.readInput("Day06_test")
+    val testInput = utils.readInput("Day06_test", year = 2022)
     check(part1(testInput) == 7)
 
-    val input = utils.readInput("Day06")
+    val input = utils.readInput("Day06", year = 2022)
     println(part1(input))
 
     // part 2

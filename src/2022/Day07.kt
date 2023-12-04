@@ -55,11 +55,11 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = utils.readInput("Day07_test")
+    val testInput = utils.readInput("Day07_test", year = 2022)
     check(part1(testInput) == 95437)
 
     cache.clear()
-    val input = utils.readInput("Day07")
+    val input = utils.readInput("Day07", year = 2022)
     println(part1(input))
 
     // part 2

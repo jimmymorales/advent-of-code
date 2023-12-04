@@ -52,10 +52,10 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = utils.readInput("Day05_test")
+    val testInput = utils.readInput("Day05_test", year = 2022)
     check(part1(testInput) == "CMZ")
 
-    val input = utils.readInput("Day05")
+    val input = utils.readInput("Day05", year = 2022)
     println(part1(input))
 
     // part 2

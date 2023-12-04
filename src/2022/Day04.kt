@@ -15,10 +15,10 @@ fun main() {
         .count { (p1, p2) -> p1.intersect(p2).isNotEmpty() }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = utils.readInput("Day04_test")
+    val testInput = utils.readInput("Day04_test", year = 2022)
     check(part1(testInput) == 2)
 
-    val input = utils.readInput("Day04")
+    val input = utils.readInput("Day04", year = 2022)
     println(part1(input))
 
     // part 2

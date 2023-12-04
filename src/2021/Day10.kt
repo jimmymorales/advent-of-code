@@ -9,11 +9,11 @@ fun main() {
             .middle
 
     // test if implementation meets criteria from the description:
-    val testInput = utils.readInput("Day10_test")
+    val testInput = utils.readInput("Day10_test", year = 2021)
     check(part1(testInput) == 26397)
     check(part2(testInput) == 288957L)
 
-    val input = utils.readInput("Day10")
+    val input = utils.readInput("Day10", year = 2021)
     println(part1(input))
     println(part2(input))
 }

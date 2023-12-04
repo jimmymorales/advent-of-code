@@ -16,11 +16,11 @@ fun main() {
     fun part2(input: List<String>): Int = part1(input, shouldFilterDiagonalVectors = false)
 
     // test if implementation meets criteria from the description:
-    val testInput = utils.readInput("Day05_test")
+    val testInput = utils.readInput("Day05_test", year = 2021)
     check(part1(testInput) == 5)
     check(part2(testInput) == 12)
 
-    val input = utils.readInput("Day05")
+    val input = utils.readInput("Day05", year = 2021)
     println(part1(input))
     println(part2(input))
 }

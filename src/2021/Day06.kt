@@ -24,11 +24,11 @@ fun main() {
     fun part2(input: List<String>): Long = part1(input, days = 256)
 
     // test if implementation meets criteria from the description:
-    val testInput = utils.readInput("Day06_test")
+    val testInput = utils.readInput("Day06_test", year = 2021)
     check(part1(testInput) == 5934L)
     check(part2(testInput) == 26984457539L)
 
-    val input = utils.readInput("Day06")
+    val input = utils.readInput("Day06", year = 2021)
     println(part1(input))
     println(part2(input))
 }

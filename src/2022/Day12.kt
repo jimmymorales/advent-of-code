@@ -81,10 +81,10 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = utils.readInput("Day12_test")
+    val testInput = utils.readInput("Day12_test", year = 2022)
     check(part1(testInput) == 31)
 
-    val input = utils.readInput("Day12")
+    val input = utils.readInput("Day12", year = 2022)
     println(part1(input))
 
     // part 2

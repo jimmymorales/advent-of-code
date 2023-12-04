@@ -25,10 +25,10 @@ fun main() {
         .sum()
 
     // test if implementation meets criteria from the description, like:
-    val testInput = utils.readInput("Day01_test")
+    val testInput = utils.readInput("Day01_test", year = 2022)
     check(part1(testInput) == 24000)
 
-    val input = utils.readInput("Day01")
+    val input = utils.readInput("Day01", year = 2022)
     println(part1(input))
 
     // part 2

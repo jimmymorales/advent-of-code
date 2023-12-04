@@ -39,10 +39,10 @@ fun main() {
     fun part2(input: List<String>): Int = part1(input, knotsCount = 10)
 
     // test if implementation meets criteria from the description, like:
-    val testInput = utils.readInput("Day09_test")
+    val testInput = utils.readInput("Day09_test", year = 2022)
     check(part1(testInput) == 88)
 
-    val input = utils.readInput("Day09")
+    val input = utils.readInput("Day09", year = 2022)
     println(part1(input))
 
     // part 2

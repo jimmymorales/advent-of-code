@@ -115,10 +115,10 @@ fun main() {
         .maxOf { it.left * it.top * it.right * it.bottom }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = utils.readInput("Day08_test")
+    val testInput = utils.readInput("Day08_test", year = 2022)
     check(part1(testInput) == 21)
 
-    val input = utils.readInput("Day08")
+    val input = utils.readInput("Day08", year = 2022)
     println(part1(input))
 
     // part 2
