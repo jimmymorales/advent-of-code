@@ -5,7 +5,7 @@ data class Coord(val x: Int, val y: Int)
 fun Coord.neighbors(
     includeDiagonal: Boolean = false,
     limitX: IntRange = 0..Int.MAX_VALUE,
-    limitY: IntRange = 0..Int.MAX_VALUE
+    limitY: IntRange = 0..Int.MAX_VALUE,
 ): List<Coord> = buildList {
     add(Coord(x + 1, y))
     add(Coord(x + -1, y))
