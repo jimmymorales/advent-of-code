@@ -11,7 +11,10 @@ import kotlin.io.path.readLines
  */
 fun readInput(name: String, year: Int = 2023) = Path("src/$year/$name.txt").readLines()
 
-fun readLinesSplitedbyEmptyLine(name: String, year: Int = 2023) = File("src/$year", "$name.txt").readText().split("\n\n")
+fun readLinesSplitedbyEmptyLine(
+    name: String,
+    year: Int = 2023,
+) = File("src/$year", "$name.txt").readText().split("\n\n")
 
 /**
  * Converts string to md5 hash.
@@ -24,3 +27,11 @@ fun String.md5() = BigInteger(1, MessageDigest.getInstance("MD5").digest(toByteA
  * The cleaner shorthand for printing output.
  */
 fun Any?.println() = println(this)
+
+fun String.parseListOfInts(): List<Int> = parseNumbers { it.toInt() }
+
+fun String.parseListOfLongs(): List<Long> = parseNumbers { it.toLong() }
+
+private fun <T> String.parseNumbers(
+    transform: (String) -> T
+): List<T> = """\d+""".toRegex().findAll(this).map { transform(it.value) }.toList()

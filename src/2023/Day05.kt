@@ -1,17 +1,18 @@
 package `2023`
 
+import utils.parseListOfLongs
 import utils.println
 import utils.readLinesSplitedbyEmptyLine
 
 fun main() {
     fun part1(input: List<String>): Long {
-        val seeds = input[0].parseNumbers()
+        val seeds = input[0].parseListOfLongs()
         val almanacMapping = input.parseMapping()
         return seeds.resolverMapping(almanacMapping)
     }
 
     fun part2(input: List<String>): Long {
-        val seedRanges = input[0].parseNumbers().windowed(size = 2, step = 2)
+        val seedRanges = input[0].parseListOfLongs().windowed(size = 2, step = 2)
             .map { it[0]..<it[0] + it[1] }
         val almanacMapping = input.parseMapping()
         // This is taking like 10 mins to run on an Intel Mac machines, definitely needs some optimizations
