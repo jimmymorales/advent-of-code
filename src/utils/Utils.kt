@@ -11,7 +11,7 @@ import kotlin.io.path.readLines
  */
 fun readInput(name: String, year: Int = 2023) = Path("src/$year/$name.txt").readLines()
 
-fun readLinesSplitedbyEmptyLine(name: String) = File("src", "$name.txt").readText().split("\n\n")
+fun readLinesSplitedbyEmptyLine(name: String, year: Int = 2023) = File("src/$year", "$name.txt").readText().split("\n\n")
 
 /**
  * Converts string to md5 hash.

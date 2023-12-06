@@ -78,10 +78,10 @@ fun main() {
         .product()
 
     // test if implementation meets criteria from the description, like:
-    val testInput = utils.readLinesSplitedbyEmptyLine("Day13_test")
+    val testInput = utils.readLinesSplitedbyEmptyLine("Day13_test", year = 2022)
     check(part1(testInput) == 13)
 
-    val input = utils.readLinesSplitedbyEmptyLine("Day13")
+    val input = utils.readLinesSplitedbyEmptyLine("Day13", year = 2022)
     println(part1(input))
 
     // part 2
