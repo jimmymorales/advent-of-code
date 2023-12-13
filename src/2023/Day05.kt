@@ -16,7 +16,7 @@ fun main() {
             .map { it[0]..<it[0] + it[1] }
         val almanacMapping = input.parseMapping()
         // This is taking like 10 mins to run on an Intel Mac machines, definitely needs some optimizations
-        // (maybe a caching layer in the mapping?)
+        // (maybe compute ranges instead of individual seeds)
         return seedRanges.minOfOrNull { seedRange ->
             seedRange.resolverMapping(almanacMapping)
         }!!
