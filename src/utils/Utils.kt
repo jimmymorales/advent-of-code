@@ -9,11 +9,11 @@ import kotlin.io.path.readLines
 /**
  * Reads lines from the given input txt file.
  */
-fun readInput(name: String, year: Int = 2023) = Path("src/$year/$name.txt").readLines()
+fun readInput(name: String, year: Int = 2024) = Path("src/$year/$name.txt").readLines()
 
 fun readLinesSplitedbyEmptyLine(
     name: String,
-    year: Int = 2023,
+    year: Int = 2024,
 ) = File("src/$year", "$name.txt").readText().split("\n\n")
 
 /**
