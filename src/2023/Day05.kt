@@ -31,13 +31,11 @@ fun main() {
     part2(input).println()
 }
 
-fun String.parseNumbers(): List<Long> = """\d+""".toRegex().findAll(this).map { it.value.toLong() }.toList()
-
 private fun List<String>.parseMapping() = drop(1).map { mapping ->
     mapping.split("\n")
         .drop(1)
         .map {
-            it.parseNumbers().let { (destStart, sourceStart, rangeLength) ->
+            it.parseListOfLongs().let { (destStart, sourceStart, rangeLength) ->
                 (sourceStart..<sourceStart + rangeLength) to destStart
             }
         }
