@@ -11,7 +11,7 @@ import kotlin.io.path.readLines
  */
 fun readInput(name: String, year: Int = 2024) = Path("src/$year/$name.txt").readLines()
 
-fun readLinesSplitedbyEmptyLine(
+fun readLinesSplitedByEmptyLine(
     name: String,
     year: Int = 2024,
 ) = File("src/$year", "$name.txt").readText().split("\n\n")

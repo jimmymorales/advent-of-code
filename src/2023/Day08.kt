@@ -1,7 +1,7 @@
 package `2023`
 
 import utils.println
-import utils.readLinesSplitedbyEmptyLine
+import utils.readLinesSplitedByEmptyLine
 
 fun main() {
     fun part1(input: List<String>): Int {
@@ -39,11 +39,11 @@ fun main() {
         return step
     }
 
-    check(part1(readLinesSplitedbyEmptyLine("Day08_test_1a", year = 2023)) == 2)
-    check(part1(readLinesSplitedbyEmptyLine("Day08_test_1b", year = 2023)) == 6)
-    check(part2(readLinesSplitedbyEmptyLine("Day08_test_2", year = 2023)) == 6L)
+    check(part1(readLinesSplitedByEmptyLine("Day08_test_1a", year = 2023)) == 2)
+    check(part1(readLinesSplitedByEmptyLine("Day08_test_1b", year = 2023)) == 6)
+    check(part2(readLinesSplitedByEmptyLine("Day08_test_2", year = 2023)) == 6L)
 
-    val input = readLinesSplitedbyEmptyLine("Day08", year = 2023)
+    val input = readLinesSplitedByEmptyLine("Day08", year = 2023)
     part1(input).println()
 
     // Need to optimize part 2

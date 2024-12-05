@@ -60,10 +60,10 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = utils.readLinesSplitedbyEmptyLine("Day11_test", year = 2022)
+    val testInput = utils.readLinesSplitedByEmptyLine("Day11_test", year = 2022)
     check(part1(testInput) == 10605L)
 
-    val input = utils.readLinesSplitedbyEmptyLine("Day11", year = 2022)
+    val input = utils.readLinesSplitedByEmptyLine("Day11", year = 2022)
     println(part1(input))
 
     // part 2

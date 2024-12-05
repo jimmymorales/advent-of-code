@@ -2,7 +2,7 @@ package `2023`
 
 import utils.parseListOfLongs
 import utils.println
-import utils.readLinesSplitedbyEmptyLine
+import utils.readLinesSplitedByEmptyLine
 
 fun main() {
     fun part1(input: List<String>): Long {
@@ -23,10 +23,10 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readLinesSplitedbyEmptyLine("Day05_test", year = 2023)
+    val testInput = readLinesSplitedByEmptyLine("Day05_test", year = 2023)
     check(part1(testInput) == 35L)
 
-    val input = readLinesSplitedbyEmptyLine("Day05", year = 2023)
+    val input = readLinesSplitedByEmptyLine("Day05", year = 2023)
     part1(input).println()
     part2(input).println()
 }
