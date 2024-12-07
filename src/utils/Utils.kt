@@ -32,6 +32,6 @@ fun String.parseListOfInts(): List<Int> = parseNumbers { it.toInt() }
 
 fun String.parseListOfLongs(): List<Long> = parseNumbers { it.toLong() }
 
-private fun <T> String.parseNumbers(
+fun <T> String.parseNumbers(
     transform: (String) -> T
 ): List<T> = """-?\d+""".toRegex().findAll(this).map { transform(it.value) }.toList()
